@@ -14,7 +14,7 @@ export default function Header() {
                 onPress={() => navigation.navigate('User')}
             >
                 <Image
-                    source={require('../../assets/images/profile.png')}
+                    source={require('../../assets/profile.png')}
                     style={{ width: 50, height: 50 }}
                 />
             </TouchableOpacity>
@@ -24,7 +24,7 @@ export default function Header() {
                 onPress={() => navigation.navigate('SignIn')}
             >
                 <Image
-                    source={require('../../assets/images/profile.png')}
+                    source={require('../../assets/profile.png')}
                     style={{ width: 50, height: 50 }}
                 />
             </TouchableOpacity>

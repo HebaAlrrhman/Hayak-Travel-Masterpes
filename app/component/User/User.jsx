@@ -34,7 +34,7 @@ export default function User() {
             <View style={styles.container}>
                 <Image
                     style={styles.imageProfile}
-                    source={require('../../assets/images/profile.png')}
+                    source={require('../../assets/profile.png')}
                     resizeMode='contain'
                 />
                 <Text style={styles.name}>{userInfo.username}</Text>

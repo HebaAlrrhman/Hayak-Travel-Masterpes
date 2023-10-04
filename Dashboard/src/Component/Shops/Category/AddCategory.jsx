@@ -77,9 +77,9 @@ export default function AddCategory() {
               
                 {/* 33th row */}
               
-                <div className='text-center p-3'>
+                {/* <div className='text-center p-3'>
                     <input type="submit" className="btn btn-primary text-center " value={"Add Category"}/>
-                    </div>
+                    </div> */}
                     <div className='text-danger text-center'>{error}</div>
 </form>
     </div>

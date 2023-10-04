@@ -7,3 +7,4 @@ module.exports = (req, res, next) => {
     next()
 
 }
+//If the ID is not valid, it will respond with a 400 status and a message, preventing the route handler from executing.

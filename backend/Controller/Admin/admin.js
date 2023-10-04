@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const { Admin, ValidateUpdateAdmin } = require('../../models/Admin')
-
+//handle HTTP requests method  operations (Create, Read, Update, Delete)
 /**-------------------------------------------------------------
  *  @desc Get all Admin 
  *  @route /api/admin

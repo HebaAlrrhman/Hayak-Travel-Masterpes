@@ -12,7 +12,8 @@ export default function FilterProduct() {
         try {
             const response = await axios.get(`http://10.0.2.2:8000/api/products/byCategory/${id}`);
           
-            setProduct(response.data); // Assuming the response contains data
+            setProduct(response.data); 
+            console.logr(response.data)// Assuming the response contains data
         } catch (error) {
             console.error('Axios error:', error);
         }

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+/** important things**/
+:root {
+  --mainColor: black;
+  --White: #fefefe;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0.13rem;
+  color: var(--White);
+}
+/*  */
+
+/*  */
+body{
+  background-color: var(--White);
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+
+html {
+  font-size: 8px;
+}
+/**Navbar**/
+.Navbar {
+  background-color: var(--White);
+  
+}
+.Navbar nav {
+  justify-content: center;
+  padding: 0 2rem;
+  align-items: center;
+
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+.normal_mnue {
+  gap: 4rem;
+  text-align: center;
+  padding-left: 7rem;
+
+  font-size: 2.2rem;
+}
+a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+.logo img {
+  width: 6rem;
+}
+
+.Burger-menu {
+  display: none;
+  align-self: center;
+}
+.nav_burger {
+  display: none;
+}
+/****Hero ****/
+.Hero {
+  font-size: 4rem;
+  color: var(--mainColor);
+}
+.app_section {
+  justify-content: center;
+  gap: 60px;
+}
+.app_section div {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app_button {
+  background-color: black;
+  color: var(--White);
+  width: 233px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 8px;
+  line-height: 20px;
+}
+
+.app_section h1 {
+  color: var(--mainColor);
+}
+.app_button .app_text {
+  align-self: center;
+}
+.app_button .app_text p {
+  font-size: 1.4rem;
+}
+.app_button .app_text .app_text {
+  font-size: 2rem;
+}
+.Hero {
+  justify-content: space-around;
+}
+/* *******About   *********/
+.about_Fixy {
+  background-color: var(--White);
+  padding: 10px;
+  margin-top: 25px;
+ 
+}
+.about_Fixy div h1 {
+  font-size: 5rem;
+  color: var(--mainColor);
+ 
+}
+
+.about_Fixy section article {
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 2rem 5rem;
+  color: var(--mainColor);
+}
+.about_Fixy figure img {
+  width: 50rem;
+}
+
+/********** Services****************/
+.services_figure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.service_section {
+  margin-top: 25px;
+}
+/***********/
+.Collection {
+  background-color: var(--mainColor);
+  margin-top: 25px;
+  padding: 25px 0;
+}
+.Collection h1 {
+  font-size: 5rem;
+  padding: 3rem;
+}
+.Collection section {
+display: flex;
+gap: 10px;
+justify-content: space-around;
+}
+.Collection section h3{
+  font-size: 3rem;
+}
+.Collection section img{
+  width: 25rem;
+
+}
+/******Contact us ******/
+.contact_us {
+  color: var(--mainColor);
+}
+.contact_us h1 {
+  font-size: 5rem;
+  color: var(--mainColor);
+}
+.contact_us h2 {
+  font-size: 3rem;
+  color: var(--mainColor);
+}
+.contact_icon {
+  background-color: var(--mainColor);
+  padding: 20px;
+  border-radius: 50%;
+}
+/* Footer **/
+footer {
+  margin-top: 25px;
+  background-color: #43a5b4;
+  padding: 20px;
+}
+footer figure img {
+  width: 15rem;
+}
+footer p {
+  font-size: 2rem;
+}
+/*media query*/
+@media screen and (max-width: 830px) {
+  .Burger-menu {
+    display: block;
+    padding-left: 10px;
+  }
+  .normal_mnue {
+    display: none;
+  }
+  .show-menu {
+    
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    background: var(--White);
+    flex-direction: column;
+    top: 15.83rem;
+    left: 0;
+    font-size: 2.5rem;
+  }
+  
+  .services_figure {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Collection section {
+    flex-direction: column;
+  }
+  .Collection section img {
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 831px) {
+  .show-menu {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+  .logo img {
+    width: 7rem;
+  }
+
+  .services_figure {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer figure img {
+    width: 11rem;
+  }
+  html {
+    font-size: 6px;
+  }
+  .app_section h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .about_Fixy section article {
+    width: 90%;
+  }
+  .about_Fixy figure img {
+    width: 100%;
+  }
+}

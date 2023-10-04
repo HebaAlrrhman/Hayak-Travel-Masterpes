@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Sidenav() {
     return (
         <>
-            <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <nav className="sb-sidenav accordion sidenav-light  " id="sidenavAccordion" style={{backgroundColor:'#f3f3f3'}}>
                 <div className="sb-sidenav-menu">
                     <div className="nav">
                         <div className="sb-sidenav-menu-heading">control Board</div>
@@ -75,7 +75,7 @@ function Sidenav() {
 
                              
                         {/* <!-- Start tables Shops  --> */}
-                        <a className="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                        {/* <a className="nav-link collapsed" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseShops" aria-expanded="false" aria-controls="collapseShops">
                             <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table" aria-hidden="true"
                                 focusable="false" data-prefix="fas" data-icon="table" role="img"
@@ -89,10 +89,10 @@ function Sidenav() {
                                             416H448V320H288V416zM448
                                             256V160H288V256H448z">
                                 </path>
-                            </svg></div> Category
+                            </svg> </div> Category
                             <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
-                        </a>
-                        <div className="collapse" id="collapseShops" aria-labelledby="headingOne"
+                        </a> */}
+                        {/* <div className="collapse" id="collapseShops" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
 
@@ -100,8 +100,9 @@ function Sidenav() {
                                             <Link to='/AddCategory' className="nav-link">Add Category</Link>
                                 
                             </nav>
-                        </div>
+                        </div> */}
                             {/*  */}
+
                         <Link to='/CreateAccount' className="nav-link">
                             <div className="sb-nav-link-icon">
                                 <i className="fas fa-chart-area"></i>

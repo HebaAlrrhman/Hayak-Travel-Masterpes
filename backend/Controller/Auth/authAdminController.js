@@ -10,27 +10,28 @@ const { Admin, ValidateRegisterAdmin, ValidateLoginAdmin, ValidateUpdateAdmin } 
  * @access private ( only Admin )  
 ---------------------------------------------------------------*/
 module.exports.registerAdminCtr1 = asyncHandler(async (req, res) => {
-
+//Validates the request body
     const { error } = ValidateRegisterAdmin(req.body)
     if (error) {
         return res.status(400).json({ message: error.details[0].message })
     }
     console.log(req.body.email)
+    //Checks if an admin with the provided email already exists.
     let admin = await Admin.findOne({ email: req.body.email })
     if (admin) {
         return res.status(400).json({ message: "user already exist" })
     }
-
+//Generates a salt using bcrypt.genSalt(10) for hashing the user's password securely.
     const salt = await bcrypt.genSalt(10)
     const hashedPassword = await bcrypt.hash(req.body.password, salt)
-
+//Creates a new admin document
     admin = new Admin({
         username: req.body.username,
         email: req.body.email,
         password: hashedPassword,
         position: req.body.position,
     })
-
+//Saves the new admin document to the database and responds with a 201 Created status and a success message.
     await admin.save()
     res.status(201).json({ message: "you registered successfully, please log in" })
 

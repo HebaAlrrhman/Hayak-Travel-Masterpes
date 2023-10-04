@@ -2,116 +2,129 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="application that offers Home and cars maintenance to help people to find someone to repair their
+    houses and cars and help the craftsmen by giving him opportunities to work in this application"
+    />
+    
+    <meta name="Keywords" content="fix ,home maintenance, FIXY " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hayak Travel</title>
+    <title>Hayak</title>
     <!-- favicon -->
-    <link rel="icon" href="./images/Hayak.png" type="img/x-icon" />
-    <!--Css file-->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./Images/Hayakk.png" type="img/x-icon" />
+    <link rel="shortcut icon" href="./Images/logoLarge.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav>
-      <div class="nav__logo">Hayak</div>
-      <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Destinations</a></li>
-        <li class="link"><a href="#">About Us</a></li>
-      </ul>
-      <button class="btn">Contact Us</button>
-    </nav>
-    <header>
-      <div class="section__container header__container">
-        <div class="header__image">
-          <img src="images/header-1.jpg" alt="header" />
-          <img src="images/header-2.jpg" alt="header" />
-        </div>
-        <div class="header__content">
-          <div>
-            <p class="sub__header">Book Now</p>
-            <h1>Hayak <br />agent for travel</h1>
-            <p class="section__subtitle">
-              Make your trip more enjoyable with us. We are the best travel
-              agency and we are providing the best travel services for our
-              clients.
-            </p>
-            <div class="action__btns">
-              <button class="btn">Plan a Trip</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <header class="Navbar flex">
+      <nav class="flex">
+        <figure class="logo">
+          <img src="./Images/Hayakk.png" alt="Logo" />
+        </figure>
+        <h1 style="color: black;">Hayak</h1>
+        <ul class="flex align-center normal_mnue">
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Services">Our Services</a></li>
+          <li><a href="#why_us">Why Us</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+        <ul class="flex align-center nav_burger" id="menu">
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Services">Our Services</a></li>
+          <li><a href="#why_us">Why Us</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+      </nav>
+      <div class="Burger-menu"><i class="fa fa-bars fa-3x" style="color: #43a5b4; padding: 10px"></i></div>
     </header>
-   <!--Abour Us-->
-    <section class="gallary">
-      <div class="section__container gallary__container">
-        <div class="image__gallary">
-          <div class="gallary__col">
-            <img src="images/about-3.jpg" alt="gallary" />
-          </div>
-          <div class="gallary__col">
-            <img src="images/about-1.jpg" alt="gallary" />
-            <img src="images/about-4.jpg" alt="gallary" />
-          </div>
+    <section class="Hero flex flex-wrap">
+      <figure>
+        <img src="./Images/profile.png" alt="Mobile M" height="700px" class="mobile_imag" />
+      </figure>
+      <section class="flex flex-col app_section">
+        <h1 class="text-center">Download The App</h1>
+        <div>
+          <button class="app_button flex">
+            <figure>
+              <img src="./Images/Googleplay.png" width="70px" alt="google Play logo" />
+            </figure>
+            <div class="app_text">
+              <p>
+                GET IT ON <br />
+                <span class="app_text">Google Play</span>
+              </p>
+            </div>
+          </button>
+          <button class="app_button flex">
+            <figure>
+              <img src="./Images/AppleLogo.png" width="70px" alt="apple store logo" />
+            </figure>
+            <div class="app_text">
+              <p>
+                GET IT ON <br />
+                <span class="app_text">Google Play</span>
+              </p>
+            </div>
+          </button>
         </div>
-        <div class="gallary__content">
-          <div>
-            <h1 class="section__title">About Us</h1>
-            <p class="section__subtitle">
-              Hayak Travel,to the activities and travel to different places for
-              leisure, recreation inside jordan only . It involves visiting
-              destinations outside one's usual environment, engaging in various
-              activities, and experiencing different cultures and
-              attractions.Conveying the idea of The Jordanian Arab civilization.
-            </p>
-            <button class="btn">View All</button>
-          </div>
-        </div>
-      </div>
+      </section>
     </section>
-<!--Contact Us-->
-    <section class="subscribe">
-      <div class="section__container subscribe__container">
-        <div class="subscribe__content">
-          <h1 class="section__title">Contact Us</h1>
-          <p class="section__subtitle">
-            Explore your suitable and dream places around the Jordan. Here you
-            can find your right destination.
-          </p>
-        </div>
-        <div class="subscribe__form">
-          <form>
-            <input type="email" placeholder="Your email here" />
-            <button class="btn" type="submit">Send</button>
-          </form>
-        </div>
+    <!-- About Section  -->
+    <section id="About" class="flex flex-col about_Fixy">
+      <div>
+        <h1 class="text-center">About us</h1>
       </div>
+      <section class="flex justify-around align-center flex-wrap">
+        <article>
+          Hayak Tourism, refers to the activities and travel to different places for leisure, recreation inside jordan only .
+           It involves visiting destinations outside one's usual environment, engaging in various activities,
+           and experiencing different cultures and attractions.Conveying the idea of ​​the Jordanian Arab civilization.
+        </article>
+        <figure>
+          <img src="./Images/about-4.jpg" alt="Logo" />
+        </figure>
+      </section>
     </section>
+ 
     
-     <!--Footer-->
-    <footer class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h1>Hayak</h1>
-          <p>
-            Explore your suitable and dream places in Jordan. Here you can find
-            your right destination.
-          </p>
-        </div>
-        <div class="footer__col">
-          <h4>Support</h4>
-          <p>FAQs</p>
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
-          <p>Contact Us</p>
-        </div>
-        <div class="footer__col">
-          <h4>Address</h4>
-          <p><span>Address:</span>Amman,Jordan</p>
-          <p><span>Email:</span> info@Hayak.com</p>
-          <p><span>Phone:</span> +962 777777777</p>
-        </div>
+    <section class="contact_us flex flex-col" id="contact">
+      <div>
+        <h1 class="text-center">Contact Us</h1>
       </div>
-      <div class="footer__bar">Copyright © 2023 Hayak travel.</div>
+      <section class="flex justify-around flex-wrap">
+        <section class="flex flex-col align-center">
+          <div><i class="fa-regular fa-envelope fa-5x contact_icon" style="color: #ffffff"></i></div>
+          <h2>Email</h2>
+          <h2>info@Hayak.com</h2>
+        </section>
+        <section class="flex flex-col align-center">
+          <div><i class="fa-solid fa-phone fa-5x contact_icon" style="color: #ffffff"></i></div>
+          <h2>Phone</h2>
+          <h2>+962 7 7620 2831</h2>
+        </section>
+      </section>
+    </section>
+    <footer class="text-center">
+      <figure>
+        <img src="./Images/111.png" alt="Logo FOOTER" />
+      </figure>
+      <p>© 2021 Hayak. All rights reserved.</p>
     </footer>
+
+    <script>
+      const x = document.querySelector(".Burger-menu");
+      x.addEventListener("click", () => {
+        const menu = document.querySelector("#menu");
+        menu.classList.toggle("show-menu");
+      });
+    </script>
   </body>
 </html>

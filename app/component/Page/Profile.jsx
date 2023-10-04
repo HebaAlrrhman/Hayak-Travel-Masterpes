@@ -88,7 +88,7 @@ export default function Profile() {
         <View>
             <View style={styles.contanier}>
                 <Image
-                    source={require('../../assets/images/logoLarge.png')}
+                    source={require('../../assets/Hayakk.png')}
                 />
             </View>
 

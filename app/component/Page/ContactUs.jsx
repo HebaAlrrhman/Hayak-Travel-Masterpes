@@ -10,7 +10,7 @@ export default function ContactUs() {
         },
         {
             id: '2',
-            title: 'MK@ORG.com',
+            title: 'Hayak@hayak.com',
             image: require('../../assets/icons/email-icon.png'),
         },
         {
@@ -34,13 +34,13 @@ export default function ContactUs() {
         <ScrollView   >
             <View style={styles.header}>
                 <Image
-                    source={require('../../assets/images/logoLarge.png')}
+                    source={require('../../assets/Hayakk.png')}
                 />
             </View>
 
             <View style={styles.list}>
                 <ImageBackground
-                    source={require('../../assets/images/bg-ContactUs.png')}
+                    source={require('../../assets/bg-ContactUs.png')}
                     style={styles.bgImage}
                     imageStyle={styles.bgImageStyle}
                 >

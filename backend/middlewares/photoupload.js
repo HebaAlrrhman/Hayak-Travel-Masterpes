@@ -1,7 +1,7 @@
 const multer = require('multer')
 const path = require('path')
 
-
+//single uploaded photo
 //photo Storage
 const photoStorage = multer.diskStorage({
     destination: function (req, file, cb) {

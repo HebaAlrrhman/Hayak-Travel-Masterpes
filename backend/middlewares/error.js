@@ -14,7 +14,8 @@ const errorHandler = (err, req, res, next) => {
 
     res.status(statusCode).json({
         message: err.message,
-        stack: process.env.MODE_ENV === "production" ? null : err.stack // If there is an error in the server, the error path is not shown in the development environment
+        stack: process.env.MODE_ENV === "production" ? null : err.stack
+         // If there is an error in the server, the error path is not shown in the development environment
     })
 }
 

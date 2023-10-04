@@ -140,14 +140,14 @@ export default function TableSort() {
 
     const rows = records.map((row) => (
         <tr key={row._id}>
-            <td>{row.brand}</td>
+          
             <td>{row.name}</td>
             <td>{row.price}</td>
             <td>
             <img src={row.image.url} alt={row.name} width='70' height='70' />
         </td>
             <td>{row.description}</td>
-            <td>{row.richDescription}</td>
+          
             <td>
                 <button type="button" className="btn btn-danger" onClick={() => setDeleteId(row.id)} data-bs-toggle="modal" data-bs-target="#delete">
                     <i className="fa-solid fa-trash"></i>
@@ -176,9 +176,7 @@ export default function TableSort() {
                                 Name
                             </th>
 
-                            <th>
-                                brand
-                            </th>
+                       
 
                             <th>
                                 price

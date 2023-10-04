@@ -43,7 +43,7 @@ export default function Home({ navigation }) {
             <View style={styles.img_container}>
                  <Image
                style={styles.imageHead}
-                    source={require('../../assets/images/logoLarge.png')}
+                    source={require('../../assets/hayak.png')}
                 />
 </View>
                <FlatList

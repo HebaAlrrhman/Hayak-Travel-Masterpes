@@ -7,48 +7,15 @@ export default function Shop() {
     const navigation = useNavigation();
     const [category,setCategory]=useState([])
 
-    useEffect(()=>{
-        getCategory();
-    },[])
-        getCategory=async()=>{
-            try{
-                const response=await axios.get('http://10.0.2.2:8000/api/categories');
-                setCategory(response.data)
-                console.log(response.data)
-            }
-            catch(err){
-                console.log(err)
-            }
-        }
-  
-
-    const renderItemshop = ({ item }) => (
-        <TouchableOpacity style={styles.item}
-            onPress={()=>navigation.navigate('FilterProduct', { category: item._id })} 
-            >
-            <Image
-                style={styles.imageCard}
-                source={{uri:item.image.url}}            />
-            <Text style={styles.card}>{item.name}</Text>
-        </TouchableOpacity >
-    );
-
-
     return (
         <View style={styles.container}>
                      <View style={styles.img_container}>
                  <Image
                style={styles.imageHead}
-                    source={require('../../assets/images/logoLarge.png')}
+                    source={require('../../assets/profile.png')}
                 />
 </View>
-            <FlatList
-                data={category}
-                renderItem={renderItemshop}
-                keyExtractor={(item) => item._id}
-                numColumns={2}
-                contentContainerStyle={styles.flatlistContent}
-            />
+           
         </View>
     )
 }

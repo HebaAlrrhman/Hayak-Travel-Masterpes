@@ -15,7 +15,7 @@ exports.getAllProducts = async (req, res) => {
         filter = { category: req.query.categories.split(',') };
     }
 
-    const productList = await Product.find(filter).populate('category');
+    const productList = await Product.find(filter);
 
     if (!productList) {
         res.status(500).json({ success: false });
@@ -24,7 +24,7 @@ exports.getAllProducts = async (req, res) => {
 };
 
 exports.getProduct = async (req, res) => {
-    const product = await Product.findById(req.params.id).populate('category');
+    const product = await Product.findById(req.params.id);
 
     if (!product) {
         res.status(500).json({ success: false });
@@ -34,8 +34,7 @@ exports.getProduct = async (req, res) => {
 
 exports.addProducts = async (req, res) => {
 try{
-    console.log(req.file.filename)
-    console.log("dsasdadsasa")
+
     const imagePath = path.join(__dirname, `../images/${req.file.filename}`)
     console.log(req.body)
     const result = await cloudinaryUploadImage(imagePath)
@@ -47,9 +46,7 @@ try{
             url: result.secure_url,
             publicId: result.public_id
         },
-        brand: req.body.brand,
         price: req.body.price,
-        category: req.body.category,
     })
     await Product.create(product)
   fs.unlinkSync(imagePath)
@@ -70,10 +67,7 @@ exports.editProduct = async (req, res) => {
             return res.status(400).send('Invalid Product Id');
         }
 
-        const category = await Category.findById(req.body.category);
-        if (!category) {
-            return res.status(400).send('Invalid Category');
-        }
+    
 
         const product = await Product.findById(productId);
         if (!product) {
@@ -84,9 +78,9 @@ exports.editProduct = async (req, res) => {
             name: req.body.name,
             description: req.body.description,
             richDescription: req.body.richDescription || product.richDescription,
-            brand: req.body.brand || product.brand,
+            
             price: req.body.price || product.price,
-            category: req.body.category,
+          
         };
 
      

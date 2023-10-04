@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 const AdminInfoContext = createContext();
-
+//This context and provider can be used to manage and share admin-related information and pagination settings across different components in your React application. 
 const AdminInfoProvider = ({ children }) => {
     const [adminInfo, setAdminInfo] = useState(() => {
         const storedAdminInfo = localStorage.getItem('adminInfo');

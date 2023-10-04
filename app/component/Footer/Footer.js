@@ -23,18 +23,6 @@ export default function Footer() {
 
             <TouchableOpacity
                 style={styles.container}
-                onPress={() => navigation.navigate('Shop')}
-            >
-                <Image
-                    style={styles.tinyLogo}
-                    source={icons.Shop}
-                />
-            </TouchableOpacity>
-
- 
-
-            <TouchableOpacity
-                style={styles.container}
                 onPress={() => navigation.navigate('Profile')}
             >
                 <Image
@@ -48,17 +36,17 @@ export default function Footer() {
     )
 }
 
-
-
 const styles = StyleSheet.create({
     rowContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
         gap: 40,
     },
+
     container: {
         padding: 20,
     },
+    
     tinyLogo: {
         width: 20,
         height: 20,

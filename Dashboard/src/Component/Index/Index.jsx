@@ -63,7 +63,7 @@ function Index() {
                                 <Routes>
 
                                     {/* All Services */}
-                                    <Route path='/' element={<ViewCard />} />
+                                    <Route path='/' element={<TableUsers />} />
                                   
                                     <Route path='/CreateAccount' element={<CreateAccount />} />
                                     <Route path='/resetPassword' element={<ResetPassword />} />

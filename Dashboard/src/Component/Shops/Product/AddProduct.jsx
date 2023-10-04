@@ -33,14 +33,14 @@ export default function AddProduct() {
         e.preventDefault();
         setError("");
       
-        if (name.current.value !== "" || brand.current.value !== "" || price.current.value !== "" || description.current.value !== "") {
+        if (name.current.value !== "" ||   price.current.value !== "" || description.current.value !== "") {
           // Create a FormData object
           const formData = new FormData();
           formData.append("name", name.current.value);
-          formData.append("brand", brand.current.value);
+          // formData.append("brand", brand.current.value);
           formData.append("price", price.current.value);
           formData.append("description", description.current.value);
-          formData.append("category", CatId.current.value);
+          //formData.append("category", CatId.current.value);
           formData.append("image", image); // Append the file
       
           try {
@@ -81,10 +81,10 @@ export default function AddProduct() {
                          <label htmlFor="">Product Name</label>
                         <input type="text" className="form-control" placeholder="Product Name" ref={name}/>
                     </div>
-                    <div className="col pl-3">
+                    {/* <div className="col pl-3">
                           <label htmlFor="" >Brand</label>
                 <input type="text" className="form-control" placeholder="Brand" ref={brand}/>
-                    </div>
+                    </div> */}
                 </div>
                 {/*  */}
                 <div className="row p-3">
@@ -92,7 +92,8 @@ export default function AddProduct() {
                          <label htmlFor="">Price</label>
                         <input type="number" className="form-control" placeholder="Price" ref={price}/>
                     </div>
-                    <div className="col pl-3">
+
+                    {/* <div className="col pl-3">
                           <label htmlFor="" className='col-12' >Category</label>
                           <select className="custom-select col-12 form-control" ref={CatId}>
                     {data.map((ele)=>{
@@ -103,8 +104,8 @@ export default function AddProduct() {
                 
 
                 </select>
-                    </div>
-                </div>
+                    </div> */}
+                </div> 
                 {/* 33th row */}
                 <div className="row p-3">
                         <div className="col">

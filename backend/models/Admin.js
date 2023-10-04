@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 
 const Schema = mongoose.Schema
 
-
+//Mongoose schema for an "Admin" model, along with validation functions using Joi for registering admins, logging in, updating admin profiles, and validating new passwords.
 const AdminSchema = new Schema({
     username: {
         type: String,
